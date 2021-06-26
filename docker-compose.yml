@@ -1,0 +1,27 @@
+version: '3'
+services:
+  app:
+    build: .
+    entrypoint: "sh docker-entrypoint.sh"
+    command: "mix phx.server"
+    volumes:
+      - .:/wabanex
+    ports:
+      - "4000:4000"
+    environment:
+      MIX_ENV: dev
+    depends_on:
+      - db
+  db:
+    image: postgres:9.6.19
+    environment:
+      - POSTGRES_DB=wabanex_dev
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data-pg-wabanex:/var/lib/postgresql
+
+volumes:
+  db-data-pg-wabanex:

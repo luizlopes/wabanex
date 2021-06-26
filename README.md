@@ -10,7 +10,7 @@ Wabanex is a GraphQL API and your main stack is developed with Elixir 1.7, Phoen
 
 ## Setup
 
-### With Docker **(WIP)**
+### With Docker
 
   Just checkout project
 
@@ -18,8 +18,8 @@ Wabanex is a GraphQL API and your main stack is developed with Elixir 1.7, Phoen
 
   Firstly you need install Elixir, link [here](https://elixir-lang.org/install.html) and checkout project.
 
-  Wabanex uses PostgresSQL, you need to access [this link](https://www.postgresql.org/download/) and follow the instructions. 
-  
+  Wabanex uses PostgresSQL, you need to access [this link](https://www.postgresql.org/download/) and follow the instructions.
+
   Or you can run PostgresSQL on Docker with the command:
   ```
   $ docker container run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
@@ -27,11 +27,11 @@ Wabanex is a GraphQL API and your main stack is developed with Elixir 1.7, Phoen
 
 ## Running
 
-### With Docker **(WIP)**
+### With Docker
   When we use docker, we have initial executed commands in Dockerfile and docker-entrypoint.sh files.
 
   ```
-  $ docker-compose up wabanex
+  $ docker-compose up app
   ```
 
 ### Without Docker
@@ -83,9 +83,9 @@ Wabanex is a GraphQL API and your main stack is developed with Elixir 1.7, Phoen
   ```
     mutation {
       createTraining(input: {
-        userId:"an_user_uuid_created_before", 
+        userId:"an_user_uuid_created_before",
         startDate: "2021-06-23",
-        endDate: "2021-07-23", 
+        endDate: "2021-07-23",
         exercises:[
           {
             name:"Novice",
