@@ -8,8 +8,7 @@ services:
       - .:/wabanex
     ports:
       - "4000:4000"
-    environment:
-      MIX_ENV: dev
+    env_file: .env.docker
     depends_on:
       - db
     stdin_open: true
