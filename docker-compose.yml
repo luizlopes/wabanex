@@ -12,6 +12,8 @@ services:
       MIX_ENV: dev
     depends_on:
       - db
+    stdin_open: true
+    tty: true
   db:
     image: postgres:9.6.19
     environment:
