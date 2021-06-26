@@ -2,11 +2,11 @@
 
 ***Application created in NLW Together event.***
 
-*Wa ban ex* = Water + Banana + Elixir
+*Wa.ban.ex* = Water + Banana + Elixir
 
 Wabanex is an API to record users and their physical training and exercises.
 
-Wabanex is a GraphQL API and your main stack is developed with Elixir 1.7, Phoenix 1.5.7, Absinthe 1.5.0 and PostgresSQL database.
+Wabanex is a GraphQL API and your main stack is developed with Elixir 1.12, Phoenix 1.5.7, Absinthe 1.5.0 and PostgresSQL database.
 
 ## Setup
 
