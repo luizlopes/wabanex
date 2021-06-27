@@ -1,6 +1,7 @@
 # Wabanex
 
-![Elixir CI](https://github.com/luizlopes/wabanex/workflows/Elixir%20CI/badge.svg)
+![Elixir CI](https://github.com/luizlopes/wabanex/workflows/Elixir%20CI/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/luizlopes/wabanex/badge.svg?branch=main)](https://coveralls.io/github/luizlopes/wabanex?branch=main)
+
 
 ***Application created in NLW Together event.***
 

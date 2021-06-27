@@ -54,6 +54,7 @@ jobs:
         DATABASE_HOSTNAME: localhost
 
     - name: Run tests
-      run: MIX_ENV=test mix test
+      run: MIX_ENV=test mix coveralls.github
       env:
         DATABASE_HOSTNAME: localhost
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
