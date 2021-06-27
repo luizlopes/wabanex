@@ -1,5 +1,7 @@
 # Wabanex
 
+![Elixir CI](https://github.com/luizlopes/wabanex/workflows/Elixir%20CI/badge.svg)
+
 ***Application created in NLW Together event.***
 
 *Wa.ban.ex* = Water + Banana + Elixir
